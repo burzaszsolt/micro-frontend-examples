@@ -45,15 +45,15 @@ module.exports = {
         "./App2Service": "./src/App2Service",
       },
       shared: {
-        ...deps,
-        react: {
-          singleton: true,
-          requiredVersion: deps.react,
-        },
-        "react-dom": {
-          singleton: true,
-          requiredVersion: deps["react-dom"],
-        },
+        // ...deps,
+        // react: {
+        //   singleton: true,
+        //   requiredVersion: deps.react,
+        // },
+        // "react-dom": {
+        //   singleton: true,
+        //   requiredVersion: deps["react-dom"],
+        // },
       },
     }),
     new HtmlWebpackPlugin({

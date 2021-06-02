@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 
 import App from "./App";
 
-const eventsToDispatch = {}
+const eventsToDispatch = {};
 
-export const render = (containerId, data) => {
+export const render = (containerId, data = {}) => {
   const container = document.getElementById(containerId);
   if (!container) return;
   ReactDOM.render(<App {...data} />, container);
