@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { App1 } from "./components/App1";
 import { App2 } from "./components/App2";
 import { App3 } from "./components/App3";
+import { Slides } from "./components/Slides";
 
 const App = () => (
   <Router>
@@ -35,7 +36,7 @@ const App = () => (
           <App3 />
         </Route>
         <Route path="/" exact>
-          <p>Home</p>
+          <Slides />
         </Route>
       </Switch>
     </div>
