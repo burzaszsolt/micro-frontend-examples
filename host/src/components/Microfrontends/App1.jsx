@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 
-import { useMicrofrontend } from "../hooks/useMicrofrontend";
+import { useMicrofrontend } from "../../hooks/useMicrofrontend";
 
 export const App1 = () => {
   const id = "mfApp1";
-  const { isLoaded, mfApp1 } = useMicrofrontend(id, 'http://localhost:3000/microfrontends/mf-app1.js');
+  const { isLoaded, mfApp1 } = useMicrofrontend(
+    id,
+    "http://localhost:3000/microfrontends/mf-app1.js"
+  );
 
   useEffect(() => {
     if (!mfApp1) return;
