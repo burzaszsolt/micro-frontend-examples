@@ -15,6 +15,6 @@ export const ListItem = styled.li`
 `;
 
 export const Link = styled(RouterLink)`
-  text-decoration: none;
+  text-decoration: ${(props) => (props.isActive ? "underline" : "none")};
   font-size: 1.4rem;
 `;

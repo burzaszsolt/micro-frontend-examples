@@ -7,15 +7,6 @@ export const SlideContainer = styled.div`
   flex-direction: column;
 `;
 
-export const Slide = styled.div`
-  background-color: lavender;
-  width: 80vw;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 export const SlideControls = styled.div`
   display: flex;
   align-items: center;
