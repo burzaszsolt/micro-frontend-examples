@@ -4,12 +4,12 @@ import ReactDOM from "react-dom";
 import App from "./App";
 
 (function fragment() {
-  const tagName = "mf-app3-tag"
+  const tagName = "mf-app3-tag";
 
   class App3Microfrontend extends HTMLElement {
     connectedCallback() {
       this.log("connected");
-      this.render()
+      this.render();
     }
 
     disconnectedCallback() {
