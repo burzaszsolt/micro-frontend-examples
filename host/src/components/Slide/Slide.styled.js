@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Slide = styled.div`
-  background-color: lavender;
+  background-color: ${props => props?.backgroundColor || 'lavender'};
   width: 80vw;
   height: 70vh;
   display: flex;
